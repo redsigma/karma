@@ -2,6 +2,28 @@
   font-size: 0.85rem;
   color: var(--bs-body-color);
   white-space: pre-wrap;
+  max-height: min(80vh, 40rem);
+  overflow-y: auto;
+  scrollbar-color: var(--bs-secondary-color) var(--bs-tertiary-bg);
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--bs-tertiary-bg);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--bs-secondary-color);
+    border: 2px solid var(--bs-tertiary-bg);
+    border-radius: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bs-body-color);
+  }
 }
 
 .components-grid-annotation-link {
